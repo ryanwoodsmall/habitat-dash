@@ -9,7 +9,7 @@ pkg_dirname="${pkg_name}-${pkg_version}"
 pkg_filename="${pkg_dirname}.tar.gz"
 pkg_source="http://gondor.apana.org.au/~herbert/dash/files/${pkg_filename}"
 pkg_shasum="6a474ac46e8b0b32916c4c60df694c82058d3297d8b385b74508030ca4a8f28a"
-pkg_build_deps=("core/gcc" "core/musl" "core/file" "core/busybox-static")
+pkg_build_deps=("core/gcc" "core/musl" "core/file" "core/busybox-static" "core/make")
 pkg_bin_dirs=("bin")
 
 DO_CHECK=1
