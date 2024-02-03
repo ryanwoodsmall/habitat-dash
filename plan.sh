@@ -40,6 +40,9 @@ do_install() {
 
 do_check() {
   cd "${SRC_PATH}" || exit 1
+  build_line "running make check"
+  make check
+  make -C src/ check
   build_line "checking that dash is static"
   file src/dash | grep 'ELF.*static'
   build_line "checking that dash can run something"
